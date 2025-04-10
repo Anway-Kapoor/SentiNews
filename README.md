@@ -1,41 +1,54 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SentiNews: Real-time News Sentiment Analysis Platform
+
+SentiNews is a modern web application that analyzes sentiment trends across news and social media in real-time, providing insights into how topics are being discussed across the internet.
+
+![SenitNews](image.png)
+
+## Features
+
+- **Real-time Sentiment Analysis**: Analyze the sentiment of news articles and social media posts as they are published
+- **Topic-based Monitoring**: Track specific topics and receive live updates when new content is available
+- **Interactive Visualizations**: View sentiment trends over time with interactive charts and graphs
+- **Multi-platform Tracking**: Aggregate content from multiple sources including News API and HackerNews
+- **Key Phrase Extraction**: Automatically identify important topics and phrases from analyzed content
+
+## Tech Stack
+
+- **Frontend**: Next.js 15, 
+- **Real-time Updates**: Socket.IO
+- **Natural Language Processing**: Sentiment analysis with custom lexicons
+- **Data Visualization**: Chart.js
+- **Styling**: TailwindCSS
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18.0 or higher
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Anway-Kapoor/SentiNews.git
+   cd SentiNews
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. Create a **.env** file in the root directory with the following variables:
+   ```bash
+   NEWS_API_KEY=your_news_api_key
+   ```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# SentiNews
-A modern web application that analyzes sentiment trends across news and social media in real-time. Built with Next.js, React, and Socket.IO.
->>>>>>> e2b0140d42f18ae21b96abc36fc27c36f6474bfd
+4. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
